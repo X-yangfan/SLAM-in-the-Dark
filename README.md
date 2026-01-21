@@ -1,10 +1,5 @@
-# DarkSLAM (Selective Open Source Version)
+# DarkSLAM
 
-This repository is a sanitized, partially open-sourced version of the original internal project.  
-It **keeps the overall framework** and exposes **model code + parts of training / loop closure detection / pose graph optimization**, while keeping the following items closed:
-- Private datasets, pretrained weights, and detailed experiment configs  
-- Data preprocessing, calibration/alignment and other engineering details  
-- Key improvements used in internal / paper versions (for confidentiality / publication reasons)
 
 ## Dataset
 - **Public dataset placeholder**: `http://xxx`  
