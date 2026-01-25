@@ -1,9 +1,13 @@
 # DarkSLAM
 
 
-## Dataset
-- **Public dataset placeholder**: `http://xxx`  
-  - Replace this URL with your own dataset hosting link when it is ready (e.g., internal server, HuggingFace, or another download page).
+- **Dark-SLAM Dataset**  
+  The Dark-SLAM dataset is shared via Baidu Netdisk (Baidu Pan).
+
+  - **Download link**: https://pan.baidu.com/s/1llP4Oo0XXdEj5DsMbEnF-Q  
+  - **Extraction code**: `8zmy`
+
+  Please use the extraction code above to download the dataset.
 
 ## Core Directory Structure
 - `src/darkslam/models/`: Depth / pose networks (ResNet encoder + decoder).
