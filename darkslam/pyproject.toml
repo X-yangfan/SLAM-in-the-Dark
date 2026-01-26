@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "darkslam"
+version = "0.1.0"
+description = "DarkSLAM (open-source slim version)"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "torch>=1.10.0",
+  "torchvision>=0.11.0",
+  "numpy>=1.20",
+  "Pillow>=9.0",
+  "tqdm>=4.60",
+]
+
+[project.optional-dependencies]
+loop = ["faiss-cpu>=1.7.4"]
+
+[project.scripts]
+darkslam = "darkslam.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
