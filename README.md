@@ -24,25 +24,38 @@ DarkSLAM is a deep learning based visual SLAM system that includes depth estimat
 ## Directory Structure
 
 ```
-src/darkslam/
-├── models/           # Network models (coming soon)
-│   ├── disp_resnet.py      # Depth estimation network
-│   ├── pose_resnet.py      # Pose estimation network
-│   └── resnet_encoder.py   # ResNet encoder
-├── engine/           # Training/Inference engine (coming soon)
-│   ├── train.py            # Training script
-│   └── infer.py            # Inference script
-├── slam/             # SLAM modules (coming soon)
-│   ├── loop_closure_detection.py   # Loop closure detection
-│   ├── pose_graph_optimization.py  # Pose graph optimization
-│   └── feature_encoder.py          # Feature encoder
-├── scdepth/          # Self-supervised training (coming soon)
-│   ├── train.py            # SC-Depth style training
-│   ├── loss_functions.py   # Loss functions
-│   └── datasets/           # Dataset loaders
-├── data/             # Data utilities (coming soon)
-└── utils/            # Helper utilities
+darkslam/
+├── datasets/         # Datasets (coming soon, see datasets/README.md)
+│   └── README.md           # Dataset documentation and download links
+├── src/darkslam/
+│   ├── models/           # Network models (coming soon)
+│   │   ├── disp_resnet.py      # Depth estimation network
+│   │   ├── pose_resnet.py      # Pose estimation network
+│   │   └── resnet_encoder.py   # ResNet encoder
+│   ├── engine/           # Training/Inference engine (coming soon)
+│   │   ├── train.py            # Training script
+│   │   └── infer.py            # Inference script
+│   ├── slam/             # SLAM modules (coming soon)
+│   │   ├── loop_closure_detection.py   # Loop closure detection
+│   │   ├── pose_graph_optimization.py  # Pose graph optimization
+│   │   └── feature_encoder.py          # Feature encoder
+│   ├── scdepth/          # Self-supervised training (coming soon)
+│   │   ├── train.py            # SC-Depth style training
+│   │   ├── loss_functions.py   # Loss functions
+│   │   └── datasets/           # Dataset loaders
+│   ├── data/             # Data utilities (coming soon)
+│   └── utils/            # Helper utilities
+└── checkpoints/      # Pretrained models (coming soon)
 ```
+
+## Datasets
+
+The datasets used in this project will be released separately. Please refer to [datasets/README.md](datasets/README.md) for:
+
+- Dataset structure and format
+- Download links (available upon release)
+- Data preprocessing instructions
+- License information
 
 ## Open Source Plan
 
